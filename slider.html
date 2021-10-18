@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>My practice 5</title>
+   <link rel="stylesheet" href="assets/css/style_slider.css">
+   <script src="assets/js/script.js"></script>
+   <script>
+        document.addEventListener('DOMContentLoaded', function(){ 
+            // ви можете зробити скільки завгодно слайдів
+            let slides = [
+                {
+                    title: "YouTube",
+                    background: "public/images/User02.jpg", 
+                    link: "https://www.youtube.com/"
+                }, {
+                    title: "Spotify",
+                    background: "public/images/User03.jpg",
+                    link: "https://www.spotify.com/ua-en/"
+                }, {
+                    title:"Github",
+                    background: "public/images/User09.jpg",
+                    link: "https://github.com/"
+                }
+            ]
+            Slider.initSlider(slides);
+        }) ;
+    </script>
+
+     <script>
+        function hider() {
+        let hide = document.getElementById("slider");
+        hide.style.display = "none";
+        }
+    </script>
+
+    <script>
+        function shower() {
+        let show = document.getElementById("slider");
+        show.style.display = "block";
+        }
+    </script> 
+
+</head>
+
+<body>
+<header class="header">
+    <a href="index.html"><img src="assets/img/snapchat.svg" alt="logo" class="logo" ></a>
+</header> 
+<div class="container">
+   <main class="center column">
+       <article>
+            <h1>Slider</h1>
+            <div id="slider"></div>
+            <div class="center_buttons" >
+                <button onclick="Slider.prevSlide()">Previous</button>
+                <button onclick="Slider.nextSlide()">Next</button>
+                 <button class="button" onclick="hider()">Hide</button>
+                <button class="button" onclick="shower()">Show</button> 
+                <button class="auto">start</button>
+            </div>
+       </article>
+   </main>
+   <nav class="left column">
+       <h3>Left heading</h3>
+       <ul>
+           <li><a href="#">Link 1</a></li>
+       </ul>
+       <h3>Left heading</h3>
+       <ul>
+           <li><a href="#">Link 1</a></li>
+       </ul>
+   </nav>
+   <div class="right column">
+       <h3>Right heading</h3>
+       <p></p>
+   </div>
+   <div class="push"></div>
+</div>
+<div class="footer-wrapper">
+   <footer class="footer"> <img src="public/images/footer_bg.jpg" alt="bgi">
+    <div class="nav_footer">
+        <a href="about.html" >ABOUT US</a>
+        <a href="contact.html" >CONTACTS</a>
+        <a href="slider.html" >SLIDER</a>
+        <a href="media.html" >MEDIA</a>
+        <a href="table.html" >TABLE</a>
+    </div>
+
+</footer>
+</div>
+</body>
+</html>
