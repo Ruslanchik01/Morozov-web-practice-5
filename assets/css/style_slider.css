@@ -225,6 +225,11 @@ article button{
    text-decoration: none;
    padding: 10px 25px;
    margin-top: 10px;
+   margin-right: 5px;
+}
+
+.slider-indexes{
+   text-align: center;
 }
 
 .center_buttons{

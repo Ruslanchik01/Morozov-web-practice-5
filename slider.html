@@ -24,7 +24,7 @@
                 }
             ]
             Slider.initSlider(slides);
-        }) ;
+        } )  ;
     </script>
 
      <script>
@@ -57,7 +57,9 @@
                 <button onclick="Slider.nextSlide()">Next</button>
                  <button class="button" onclick="hider()">Hide</button>
                 <button class="button" onclick="shower()">Show</button> 
-                <button class="auto">start</button>
+                <button id="toggle" onclick="Slider.play(event)">Start</button>
+                <!-- <button class="auto">start</button> -->
+
             </div>
        </article>
    </main>

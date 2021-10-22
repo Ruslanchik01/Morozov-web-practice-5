@@ -27,7 +27,7 @@ function Slide(index, title, background, link ) {
             <h2>${slide.title}</h2>
             <a class='link' href='${slide.link}' target='_blank'>Open</a></div></div>`;
         }
- 
+
         document.getElementById("slider").innerHTML = sliderHTML;
         document.getElementById("slide-" + this.current).style.left = 0;
     },
@@ -62,21 +62,36 @@ function Slide(index, title, background, link ) {
         document.getElementById("slide-" + this.current).setAttribute("class", "singleSlide slideOutLeft");
  
         this.current = next;
-     }
-}
- 
-const toggle = document.querySelector(".auto");
-
-toggle.addEventListener('click', (event) => {
-    if (event.target.classList.contains('start')) {
-        event.target.innerHTML = 'Stop';
-        clearInterval(interval)
-    } else {
-        event.target.innerHTML = 'Start';
-        interval = setInterval(() => {
-            Slider.nextSlide();
-        }, 1000)
+     },
+    
+     
+    play: function (event) {
+            if (event.target.classList.contains('Start')) {
+                event.target.innerHTML = 'Stopped';
+                clearInterval(interval)
+            } else {
+                event.target.innerHTML = 'Operation';
+                interval = setInterval(() => {
+                    Slider.nextSlide();
+                }, 3000)
+            }
+            event.target.classList.toggle('Start')
     }
-    event.target.classList.toggle('start')
-});
- 
+}
+
+/* const toggle = document.querySelector(".auto");
+
+    toggle.addEventListener('click', (event) => {
+        console.log(event);
+        if (event.target.classList.contains('start')) {
+            event.target.innerHTML = 'Stopped';
+            clearInterval(interval)
+        } else {
+            event.target.innerHTML = 'In progress';
+            interval = setInterval(() => {
+                Slider.nextSlide();
+            }, 1000)
+        }
+        event.target.classList.toggle('start')
+    }) */
+
