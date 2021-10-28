@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>My practice 6</title>
+   <link rel="stylesheet" href="assets/css/style_canvas.css">
+   <script src="assets/js/canvas.js"></script>
+   <script src="assets/js/all.js"></script>
+    <script>
+        window.onload=function(){
+            canvas('#draw', {
+            width: 500,
+            height: 300,
+            strokeWidth: 5,
+            strokeColor: "#4CAF50"
+            })
+        };
+    </script>
+</head>
+<body>
+<header class="header">
+    <a href="index.html"><img src="assets/img/snapchat.svg" alt="logo" class="logo" ></a>
+</header>
+<div class="container">
+   <main class="center column">
+       <article>
+           <h1>Canvas page</h1>
+           <canvas id="draw"></canvas><br>
+           <input type="color" id="color-picker" />
+           <input type="range" id="brush-picker" value="10" min="1" max="10">
+           <div class="toolbar" id="toolbar"></div>
+           
+        
+       </article>
+   </main>
+   <nav class="left column">
+       <h3>Left heading</h3>
+       <ul>
+           <li><a href="#">Link 1</a></li>
+       </ul>
+       <h3>Left heading</h3>
+       <ul>
+           <li><a href="#">Link 1</a></li>
+       </ul>
+   </nav>
+   <div class="right column">
+       <h3>Right heading</h3>
+       <p></p>
+   </div>
+   <div class="push"></div>
+</div>
+<div class="footer-wrapper">
+   <footer class="footer"> <img src="public/images/footer_bg.jpg" alt="bgi">
+    <div class="nav_footer">
+        <a href="about.html" >ABOUT US</a>
+        <a href="contact.html" >CONTACTS</a>
+        <a href="slider.html" >SLIDER</a>
+        <a href="media.html" >MEDIA</a>
+        <a href="table.html" >TABLE</a>
+    </div>
+
+</footer>
+</div>
+</body>
+</html>
