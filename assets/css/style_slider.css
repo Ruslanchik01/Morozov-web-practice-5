@@ -217,7 +217,7 @@ a.link {
    animation: slideOutRight 1s forwards;
 }
 
-article button{
+/* article  */.button{
    background-color: #4CA74C;
    border: 0;
    color: #fff;

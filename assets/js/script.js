@@ -65,7 +65,7 @@ function Slide(index, title, background, link ) {
      },
     
      
-    play: function (event) {
+    /* play: function (event) {
             if (event.target.classList.contains('Start')) {
                 event.target.innerHTML = 'Stopped';
                 clearInterval(interval)
@@ -76,22 +76,8 @@ function Slide(index, title, background, link ) {
                 }, 3000)
             }
             event.target.classList.toggle('Start')
-    }
+    } */
 }
 
-/* const toggle = document.querySelector(".auto");
 
-    toggle.addEventListener('click', (event) => {
-        console.log(event);
-        if (event.target.classList.contains('start')) {
-            event.target.innerHTML = 'Stopped';
-            clearInterval(interval)
-        } else {
-            event.target.innerHTML = 'In progress';
-            interval = setInterval(() => {
-                Slider.nextSlide();
-            }, 1000)
-        }
-        event.target.classList.toggle('start')
-    }) */
 
